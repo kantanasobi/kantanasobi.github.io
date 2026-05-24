@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="description" content="疲れていても、こどもとすぐ遊べる。道具なし・今すぐできる遊びを提案します。">
+  <meta name="theme-color" content="#FF7043">
+  <meta property="og:title" content="いまなにする？">
+  <meta property="og:description" content="道具なし・今すぐできる遊びを提案します。">
+  <meta property="og:type" content="website">
+  <title>いまなにする？</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 画面①：選択 -->
+  <div id="screen-select" class="screen active">
+    <header class="top-header">
+      <div class="header-deco">🎈</div>
+      <h1 class="app-title">いまなにする？</h1>
+      <p class="app-sub">こどもとの遊びをすぐさがそう</p>
+    </header>
+
+    <main class="select-main">
+      <section class="section">
+        <h2 class="section-label">なんさいですか？</h2>
+        <div class="chip-group" id="age-group">
+          <button class="chip" data-value="0-1">👶 0〜1歳</button>
+          <button class="chip" data-value="2-3">🐣 2〜3歳</button>
+          <button class="chip" data-value="4-6">🌱 4〜6歳</button>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-label">いまどんな状況？</h2>
+        <div class="chip-group" id="situation-group">
+          <button class="chip" data-value="home">🏠 家遊び</button>
+          <button class="chip" data-value="waiting">⏰ 待ち時間</button>
+          <button class="chip" data-value="car">🚗 車の中</button>
+          <button class="chip" data-value="sick">🤒 風邪ぎみ</button>
+          <button class="chip" data-value="tired">😴 つかれてる</button>
+        </div>
+      </section>
+
+      <button id="play-btn" class="btn-play" disabled>あそぶ！</button>
+    </main>
+  </div>
+
+  <!-- 画面②：結果 -->
+  <div id="screen-result" class="screen">
+    <header class="result-header">
+      <button id="back-btn" class="btn-back">← もどる</button>
+      <h2 class="result-title" id="result-label">あそびを探しています…</h2>
+    </header>
+
+    <main class="result-main">
+      <div id="cards-container"></div>
+
+      <div id="no-results" class="no-results" hidden>
+        <p class="no-results-icon">🔍</p>
+        <p class="no-results-msg">見つかりませんでした</p>
+        <p class="no-results-sub">条件を変えて試してみてください</p>
+      </div>
+
+      <button id="more-btn" class="btn-more" hidden>もっと見る ▼</button>
+    </main>
+
+    <footer class="sns-footer">
+      <p class="sns-label">作った人をフォローしてね ✨</p>
+      <div class="sns-links">
+        <a href="#" class="sns-link" aria-label="X">𝕏</a>
+        <a href="#" class="sns-link" aria-label="Instagram">📷</a>
+        <a href="#" class="sns-link" aria-label="Threads">🧵</a>
+        <a href="#" class="sns-link" aria-label="note">📝</a>
+      </div>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
