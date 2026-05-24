@@ -1,0 +1,383 @@
+:root {
+  --bg: #fff8e8;
+  --paper: #fffef9;
+  --ink: #3c3028;
+  --muted: #74695f;
+  --line: #ead9b9;
+  --accent: #f5b748;
+  --accent-dark: #a4572a;
+  --mint: #9ed9c1;
+  --rose: #f4a2a0;
+  --sky: #9ccbe6;
+  --shadow: 0 12px 28px rgba(92, 64, 36, 0.14);
+  font-family: "Hiragino Maru Gothic ProN", "Yu Gothic", "Meiryo", system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100svh;
+  margin: 0;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at top left, rgba(244, 162, 160, 0.22), transparent 28rem),
+    linear-gradient(180deg, #fff2cf 0%, var(--bg) 32%, #fffaf0 100%);
+}
+
+button,
+input {
+  font: inherit;
+}
+
+.app-shell {
+  width: min(100%, 460px);
+  min-height: 100svh;
+  margin: 0 auto;
+  padding: max(18px, env(safe-area-inset-top)) 18px max(28px, env(safe-area-inset-bottom));
+}
+
+.hero {
+  position: relative;
+  padding: 24px 2px 18px;
+}
+
+.hero-art {
+  position: absolute;
+  inset: 6px 0 auto auto;
+  width: 148px;
+  height: 100px;
+  pointer-events: none;
+}
+
+.sun,
+.house,
+.cloud {
+  position: absolute;
+  display: block;
+}
+
+.sun {
+  top: 2px;
+  right: 16px;
+  width: 58px;
+  height: 58px;
+  border: 4px solid #df8f35;
+  border-radius: 50%;
+  background: #ffd568;
+}
+
+.house {
+  right: 48px;
+  bottom: 6px;
+  width: 58px;
+  height: 44px;
+  border: 4px solid #7e5841;
+  border-radius: 8px;
+  background: #f8dbc0;
+  transform: rotate(-2deg);
+}
+
+.house::before {
+  content: "";
+  position: absolute;
+  left: 7px;
+  top: -28px;
+  width: 38px;
+  height: 38px;
+  border-left: 4px solid #7e5841;
+  border-top: 4px solid #7e5841;
+  background: #e98169;
+  transform: rotate(45deg);
+}
+
+.cloud {
+  width: 44px;
+  height: 18px;
+  border: 3px solid #7da9bf;
+  border-radius: 999px;
+  background: #e8f6fb;
+}
+
+.cloud::before {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: -12px;
+  width: 18px;
+  height: 18px;
+  border: 3px solid #7da9bf;
+  border-bottom: 0;
+  border-radius: 50% 50% 0 0;
+  background: #e8f6fb;
+}
+
+.cloud-one {
+  top: 22px;
+  left: 2px;
+}
+
+.cloud-two {
+  right: 0;
+  bottom: 8px;
+  transform: scale(0.74);
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  color: var(--accent-dark);
+  font-size: 0.86rem;
+  font-weight: 700;
+}
+
+h1,
+h2,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  max-width: 12rem;
+  margin-bottom: 8px;
+  font-size: clamp(2.35rem, 14vw, 3.9rem);
+  line-height: 0.96;
+  letter-spacing: 0;
+}
+
+.lead {
+  max-width: 19rem;
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 0.98rem;
+  line-height: 1.75;
+}
+
+.picker,
+.results {
+  padding: 18px;
+  border: 3px solid #6f5140;
+  border-radius: 8px;
+  background: var(--paper);
+  box-shadow: var(--shadow);
+}
+
+fieldset {
+  min-width: 0;
+  margin: 0 0 18px;
+  padding: 0;
+  border: 0;
+}
+
+legend,
+.results h2 {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.segmented,
+.chips {
+  display: grid;
+  gap: 8px;
+}
+
+.segmented {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.chips {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+label {
+  min-width: 0;
+}
+
+label input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+label span {
+  display: grid;
+  min-height: 48px;
+  place-items: center;
+  padding: 10px 8px;
+  border: 2px solid var(--line);
+  border-radius: 8px;
+  color: var(--muted);
+  background: #fff9ed;
+  font-size: clamp(0.78rem, 3.6vw, 0.98rem);
+  font-weight: 800;
+  text-align: center;
+}
+
+label input:checked + span {
+  border-color: #6f5140;
+  color: var(--ink);
+  background: #ffe0a1;
+  box-shadow: inset 0 -3px 0 rgba(111, 81, 64, 0.14);
+}
+
+.primary-button,
+.more-button,
+.text-button {
+  min-height: 52px;
+  border: 0;
+  border-radius: 8px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.primary-button,
+.more-button {
+  width: 100%;
+  color: #352418;
+  background: var(--accent);
+  box-shadow: 0 5px 0 #bd762f;
+}
+
+.primary-button:active,
+.more-button:active {
+  transform: translateY(3px);
+  box-shadow: 0 2px 0 #bd762f;
+}
+
+.results {
+  margin-top: 16px;
+}
+
+.results-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.results h2 {
+  margin: 0;
+}
+
+.text-button {
+  min-height: 36px;
+  padding: 0 10px;
+  color: var(--accent-dark);
+  background: #fff0cf;
+  font-size: 0.84rem;
+}
+
+.cards {
+  display: grid;
+  gap: 12px;
+}
+
+.play-card {
+  padding: 14px;
+  border: 2px solid var(--line);
+  border-radius: 8px;
+  background: #fffdf7;
+}
+
+.play-card:nth-child(3n + 1) {
+  border-top: 6px solid var(--mint);
+}
+
+.play-card:nth-child(3n + 2) {
+  border-top: 6px solid var(--rose);
+}
+
+.play-card:nth-child(3n) {
+  border-top: 6px solid var(--sky);
+}
+
+.play-card h3 {
+  margin: 0 0 10px;
+  font-size: 1.15rem;
+  line-height: 1.35;
+  letter-spacing: 0;
+}
+
+.play-card dl {
+  display: grid;
+  gap: 7px;
+  margin: 0;
+}
+
+.play-card div {
+  display: grid;
+  gap: 2px;
+}
+
+.play-card dt {
+  color: var(--accent-dark);
+  font-size: 0.78rem;
+  font-weight: 900;
+}
+
+.play-card dd {
+  margin: 0;
+  color: var(--ink);
+  font-size: 0.96rem;
+  line-height: 1.65;
+}
+
+.empty {
+  margin: 12px 0 0;
+  color: var(--muted);
+  font-size: 0.86rem;
+  line-height: 1.6;
+}
+
+.more-button {
+  margin-top: 14px;
+}
+
+.more-button[hidden] {
+  display: none;
+}
+
+.footer {
+  padding: 22px 2px 0;
+  color: var(--muted);
+  font-size: 0.86rem;
+  text-align: center;
+}
+
+.footer p {
+  margin-bottom: 10px;
+}
+
+.footer nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+.footer a {
+  display: inline-flex;
+  min-height: 38px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+  border: 2px solid var(--line);
+  border-radius: 999px;
+  color: var(--accent-dark);
+  background: rgba(255, 255, 255, 0.66);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+@media (min-width: 720px) {
+  body {
+    display: grid;
+    place-items: start center;
+  }
+
+  .app-shell {
+    padding-top: 32px;
+  }
+}

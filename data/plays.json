@@ -1,0 +1,242 @@
+[
+  {
+    "title": "お顔まねっこ",
+    "ages": ["0-1", "2-3"],
+    "situations": ["home", "tired", "sick"],
+    "description": "親がにこにこ、びっくり、ぷくーっと顔を変えて、子どもにまねしてもらう",
+    "voice": "「まねっこできるかな？にこー」",
+    "item": "なし"
+  },
+  {
+    "title": "手のひらトントン",
+    "ages": ["0-1"],
+    "situations": ["home", "waiting", "sick", "tired"],
+    "description": "子どもの手のひらを、ゆっくりトントン、すりすり、ぎゅっと触る",
+    "voice": "「トントン、すりすり、ぎゅー」",
+    "item": "なし"
+  },
+  {
+    "title": "音さがし",
+    "ages": ["0-1", "2-3", "4-6"],
+    "situations": ["home", "waiting", "car", "sick"],
+    "description": "今聞こえる音を一緒に探す。小さい音でも見つけたら正解",
+    "voice": "「いま、どんな音が聞こえる？」",
+    "item": "なし"
+  },
+  {
+    "title": "ゆびさんぽ",
+    "ages": ["0-1", "2-3"],
+    "situations": ["home", "waiting", "sick", "tired"],
+    "description": "親の指を小さな人に見立てて、腕や布団の上を歩かせる",
+    "voice": "「てくてく、どこまで行こうかな」",
+    "item": "なし"
+  },
+  {
+    "title": "いないいない表情",
+    "ages": ["0-1", "2-3"],
+    "situations": ["home", "waiting", "sick"],
+    "description": "手で顔を隠して、出すたびに違う表情をする",
+    "voice": "「いないいない、びっくり！」",
+    "item": "なし"
+  },
+  {
+    "title": "どうぶつ鳴き声クイズ",
+    "ages": ["2-3", "4-6"],
+    "situations": ["home", "waiting", "car", "tired"],
+    "description": "親が鳴き声だけを出して、何のどうぶつか当ててもらう",
+    "voice": "「ワンワン。これはだれ？」",
+    "item": "なし"
+  },
+  {
+    "title": "反対ことばゲーム",
+    "ages": ["2-3", "4-6"],
+    "situations": ["waiting", "car", "home"],
+    "description": "大きい、小さい、長い、短いなど、反対の言葉を言い合う",
+    "voice": "「おおきいの反対は？」",
+    "item": "なし"
+  },
+  {
+    "title": "ゆっくりしりとり",
+    "ages": ["4-6"],
+    "situations": ["waiting", "car", "home", "sick"],
+    "description": "急がずにしりとりをする。思いつかない時はヒントを出す",
+    "voice": "「りんご、次は『ご』だね」",
+    "item": "なし"
+  },
+  {
+    "title": "色みつけ",
+    "ages": ["2-3", "4-6"],
+    "situations": ["home", "waiting", "car"],
+    "description": "まわりにある色をひとつ決めて、同じ色のものを探す",
+    "voice": "「赤いもの、どこにあるかな？」",
+    "item": "なし"
+  },
+  {
+    "title": "ちいさい声ゲーム",
+    "ages": ["2-3", "4-6"],
+    "situations": ["waiting", "sick", "tired"],
+    "description": "できるだけ小さい声で、好きな食べ物や名前を言い合う",
+    "voice": "「ひみつの声で、好きなくだもの教えて」",
+    "item": "なし"
+  },
+  {
+    "title": "オノマトペまね",
+    "ages": ["0-1", "2-3", "4-6"],
+    "situations": ["home", "car", "tired"],
+    "description": "ふわふわ、ざーざー、ころころなどの音を親子でまねする",
+    "voice": "「ころころって、どんな動き？」",
+    "item": "なし"
+  },
+  {
+    "title": "気持ちあてっこ",
+    "ages": ["2-3", "4-6"],
+    "situations": ["home", "waiting", "sick"],
+    "description": "親が表情を作り、うれしい、かなしい、ねむいなどを当ててもらう",
+    "voice": "「この顔、どんな気持ちかな？」",
+    "item": "なし"
+  },
+  {
+    "title": "お片づけ隊",
+    "ages": ["2-3", "4-6"],
+    "situations": ["home", "tired"],
+    "description": "目の前のものをひとつだけ戻す。たくさん片づけようとしない",
+    "voice": "「隊長、これをおうちに帰してあげよう」",
+    "item": "なし"
+  },
+  {
+    "title": "おふとん雲",
+    "ages": ["0-1", "2-3", "4-6"],
+    "situations": ["home", "sick", "tired"],
+    "description": "布団や座った場所から動かず、空に浮かぶ雲のつもりで深呼吸する",
+    "voice": "「ふわーって浮かんで、すーって息しよう」",
+    "item": "なし"
+  },
+  {
+    "title": "今日の一番",
+    "ages": ["2-3", "4-6"],
+    "situations": ["home", "car", "sick", "tired"],
+    "description": "今日うれしかったこと、好きだったことをひとつだけ聞く",
+    "voice": "「今日の一番よかったこと、なに？」",
+    "item": "なし"
+  },
+  {
+    "title": "見えたものビンゴ",
+    "ages": ["2-3", "4-6"],
+    "situations": ["car", "waiting"],
+    "description": "信号、木、白い車など、見えたものを言っていく",
+    "voice": "「白い車を見つけたら教えて」",
+    "item": "なし"
+  },
+  {
+    "title": "車の色カウント",
+    "ages": ["4-6"],
+    "situations": ["car"],
+    "description": "次に見える車の色を予想して、当たったら小さく喜ぶ",
+    "voice": "「次は何色の車が来ると思う？」",
+    "item": "なし"
+  },
+  {
+    "title": "ゆっくり数え",
+    "ages": ["0-1", "2-3", "4-6"],
+    "situations": ["waiting", "sick", "tired"],
+    "description": "指や呼吸に合わせて、ゆっくり10まで数える",
+    "voice": "「いーち、にーい、ゆっくりね」",
+    "item": "なし"
+  },
+  {
+    "title": "好きなもの列車",
+    "ages": ["2-3", "4-6"],
+    "situations": ["car", "waiting", "home"],
+    "description": "好きな食べ物や乗り物を、列車みたいにつなげて言う",
+    "voice": "「バナナ列車、次は何を乗せる？」",
+    "item": "なし"
+  },
+  {
+    "title": "絵本のつづきごっこ",
+    "ages": ["2-3", "4-6"],
+    "situations": ["home", "sick", "tired"],
+    "description": "知っている絵本やお話の続きを、親子で勝手に作る",
+    "voice": "「このあと、くまさんはどこに行ったかな？」",
+    "item": "なし"
+  },
+  {
+    "title": "おくちチャック探偵",
+    "ages": ["2-3", "4-6"],
+    "situations": ["waiting", "sick"],
+    "description": "声を出さずに、指差しや表情だけで答える静かなクイズ",
+    "voice": "「しゃべらずに、青いものを指させる？」",
+    "item": "なし"
+  },
+  {
+    "title": "どっちが好き？",
+    "ages": ["2-3", "4-6"],
+    "situations": ["home", "waiting", "car", "tired"],
+    "description": "りんごとバナナ、走ると歩くなど、二択で好きな方を選ぶ",
+    "voice": "「ごはんとパン、今日はどっちの気分？」",
+    "item": "なし"
+  },
+  {
+    "title": "ねむねむ実況",
+    "ages": ["0-1", "2-3"],
+    "situations": ["sick", "tired", "home"],
+    "description": "子どもの動きを静かに実況する。眠い時は声を落とす",
+    "voice": "「おててが、ゆっくり動きました」",
+    "item": "なし"
+  },
+  {
+    "title": "からだタッチ確認",
+    "ages": ["0-1", "2-3", "4-6"],
+    "situations": ["home", "sick"],
+    "description": "頭、ほっぺ、肩などを順番にやさしく触って名前を言う",
+    "voice": "「ここは、ほっぺ。ここは、ひざ」",
+    "item": "なし"
+  },
+  {
+    "title": "お天気ごっこ",
+    "ages": ["2-3", "4-6"],
+    "situations": ["home", "car", "waiting"],
+    "description": "晴れ、雨、風、雪を手や表情で表す",
+    "voice": "「ぽつぽつ雨は、どんな手かな？」",
+    "item": "なし"
+  },
+  {
+    "title": "一文字レストラン",
+    "ages": ["4-6"],
+    "situations": ["waiting", "car", "home"],
+    "description": "ひとつの文字から始まる食べ物を順番に言う",
+    "voice": "「『あ』から始まる食べ物、なにがある？」",
+    "item": "なし"
+  },
+  {
+    "title": "おへんじリズム",
+    "ages": ["0-1", "2-3"],
+    "situations": ["home", "waiting", "tired"],
+    "description": "親が短いリズムで名前を呼び、子どもの声や動きに合わせて返す",
+    "voice": "「はーい、ってできるかな？」",
+    "item": "なし"
+  },
+  {
+    "title": "静かな宝さがし",
+    "ages": ["2-3", "4-6"],
+    "situations": ["home", "sick", "tired"],
+    "description": "座ったまま、見える範囲で丸いものややわらかそうなものを探す",
+    "voice": "「ここから見える丸いもの、ある？」",
+    "item": "なし"
+  },
+  {
+    "title": "ありがとう探し",
+    "ages": ["2-3", "4-6"],
+    "situations": ["home", "car", "tired"],
+    "description": "今日ありがとうと言いたい人や物をひとつ見つける",
+    "voice": "「今日は何にありがとうって言う？」",
+    "item": "なし"
+  },
+  {
+    "title": "ゆび忍者",
+    "ages": ["2-3", "4-6"],
+    "situations": ["waiting", "car", "sick"],
+    "description": "指を忍者にして、音を出さずに膝や手の上を移動させる",
+    "voice": "「しー、忍者だから静かに進むよ」",
+    "item": "なし"
+  }
+]

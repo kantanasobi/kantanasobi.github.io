@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#f7c85f">
+    <title>いまなにする？</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="hero" aria-labelledby="app-title">
+        <div class="hero-art" aria-hidden="true">
+          <span class="sun"></span>
+          <span class="house"></span>
+          <span class="cloud cloud-one"></span>
+          <span class="cloud cloud-two"></span>
+        </div>
+        <p class="eyebrow">道具なしで、すぐ遊べる</p>
+        <h1 id="app-title">いまなにする？</h1>
+        <p class="lead">疲れていても、待ち時間でも。今の状況に合う遊びを3つ出します。</p>
+      </section>
+
+      <form class="picker" id="play-form">
+        <fieldset>
+          <legend>子どもの年齢</legend>
+          <div class="segmented" role="radiogroup" aria-label="子どもの年齢">
+            <label>
+              <input type="radio" name="age" value="0-1" checked>
+              <span>0〜1歳</span>
+            </label>
+            <label>
+              <input type="radio" name="age" value="2-3">
+              <span>2〜3歳</span>
+            </label>
+            <label>
+              <input type="radio" name="age" value="4-6">
+              <span>4〜6歳</span>
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>いまの状況</legend>
+          <div class="chips" role="radiogroup" aria-label="いまの状況">
+            <label>
+              <input type="radio" name="situation" value="home" checked>
+              <span>家遊び</span>
+            </label>
+            <label>
+              <input type="radio" name="situation" value="waiting">
+              <span>待ち時間</span>
+            </label>
+            <label>
+              <input type="radio" name="situation" value="car">
+              <span>車</span>
+            </label>
+            <label>
+              <input type="radio" name="situation" value="sick">
+              <span>風邪</span>
+            </label>
+            <label>
+              <input type="radio" name="situation" value="tired">
+              <span>親つかれてる</span>
+            </label>
+          </div>
+        </fieldset>
+
+        <button class="primary-button" type="submit">あそぶ！</button>
+      </form>
+
+      <section class="results" id="results" aria-live="polite" hidden>
+        <div class="results-head">
+          <h2>これなら今できそう</h2>
+          <button class="text-button" id="reset-button" type="button">選びなおす</button>
+        </div>
+        <div class="cards" id="cards"></div>
+        <p class="empty" id="empty-message" hidden>ぴったりが少なかったので、近い遊びも混ぜています。</p>
+        <button class="more-button" id="more-button" type="button">もっと見る</button>
+      </section>
+
+      <footer class="footer">
+        <p>また使えるように、SNSも準備中です。</p>
+        <nav aria-label="SNSリンク">
+          <a href="#" aria-label="X">X</a>
+          <a href="#" aria-label="Instagram">Instagram</a>
+          <a href="#" aria-label="Threads">Threads</a>
+          <a href="#" aria-label="note">note</a>
+        </nav>
+      </footer>
+    </main>
+
+    <script src="data/fallback.js" defer></script>
+    <script src="app.js" defer></script>
+  </body>
+</html>
